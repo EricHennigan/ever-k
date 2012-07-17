@@ -1,44 +1,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/pager"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@layout/activity_main"
-    tools:context=".MainActivity" >
-
-    <!--
-    This title strip will display the currently visible page title, as well as the page
-    titles for adjacent pages.
-    -->
-
-    <android.support.v4.view.PagerTitleStrip
-        android:id="@+id/pager_title_strip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_gravity="top"
-        android:background="#33b5e5"
-        android:paddingBottom="4dp"
-        android:paddingTop="4dp"
-        android:textColor="#fff" >
-    </android.support.v4.view.PagerTitleStrip>
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:text="@string/k" />
+    android:layout_height="match_parent" >
 
     <TextView
-        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Medium Text"
-        android:textAppearance="@string/_android_attr_textappearancemedium"
-        android:textColorLink="@android:color/holo_red_dark" />
-
-    <GridLayout android:id="@+id/GridLayout1" >
-    </GridLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/hello_world"
+        tools:context=".MainActivity" />
 
 </RelativeLayout>
