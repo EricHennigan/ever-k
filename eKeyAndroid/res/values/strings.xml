@@ -6,5 +6,6 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="button">Button</string>
     <string name="k">K</string>
+    <string name="menu_edit">Edit</string>
 
 </resources>
