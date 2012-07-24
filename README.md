@@ -21,3 +21,10 @@ Testing 123
 ---------------
 
 Testing 456 (wlh)
+
+
+--------------
+
+WIlliam,
+
+How to run a test on the eKeyAndroid (aka how to run the Android emulator)
