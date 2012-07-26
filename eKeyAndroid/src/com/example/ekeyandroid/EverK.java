@@ -1,5 +1,7 @@
 package com.example.ekeyandroid;
 
+import com.example.ekeyandroid.DrawView;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -13,6 +15,11 @@ public class EverK extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+	     // draw the view
+	     setContentView(new DrawView(this));
+        
+        
     }
 
     @Override
