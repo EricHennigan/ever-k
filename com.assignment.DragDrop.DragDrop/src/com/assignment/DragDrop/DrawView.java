@@ -16,14 +16,14 @@ public class DrawView extends View {
         
         // setting the start point for the balls
         Point point1 = new Point();
-        point1.x = 550;
-        point1.y = 580;
+        point1.x = 500;
+        point1.y = 450;
         Point point2 = new Point();
-        point2.x = 500;
-        point2.y = 580;
+        point2.x = 560;
+        point2.y = 450;
         Point point3 = new Point();
-        point3.x = 320;
-        point3.y = 500;
+        point3.x = 850;
+        point3.y = 150;
         Point point4 = new Point();
         point4.x = 120;
         point4.y = 200;
