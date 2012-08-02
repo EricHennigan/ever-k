@@ -8,9 +8,10 @@
     <application android:icon="@drawable/icon" android:label="@string/app_name">
         <activity android:name=".DragDrop"
                   android:label="@string/app_name"
-                  android:screenOrientation="landscape"
+                  android:screenOrientation="sensorLandscape"
                   >
-                  <!--  jl forced landscape -->
+                  <!--  jl set orientation to sensor landscape-->
+                  
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
