@@ -10,9 +10,11 @@ public class ColorBall  {
  private int coordX = 0; // the x coordinate at the canvas
  private int coordY = 0; // the y coordinate at the canvas
  private int id; // gives every ball his own id, for now not necessary
+ private int objectRadius = 0; //jl
  private static int count = 1;
  private boolean goRight = true;
  private boolean goDown = true;
+ 
  
 	public ColorBall(Context context, int drawable) {
 
@@ -24,7 +26,8 @@ public class ColorBall  {
 
 	}
 	
-	public ColorBall(Context context, int drawable, Point point) {
+	//jl added argument for radius of object
+	public ColorBall(Context context, int drawable, Point point, int radius) {
 
 		BitmapFactory.Options opts = new BitmapFactory.Options();
         opts.inJustDecodeBounds = true;
@@ -33,6 +36,7 @@ public class ColorBall  {
 		count++;
 		coordX= point.x;
 		coordY = point.y;
+		objectRadius = radius;
 
 	}
 	
@@ -58,6 +62,11 @@ public class ColorBall  {
 	
 	public int getID() {
 		return id;
+	}
+	
+	//jl to return radius, TODO determine radius from drawable
+	public int getRadius() {
+		return objectRadius;
 	}
 	
 	public Bitmap getBitmap() {
