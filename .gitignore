@@ -1,0 +1,5 @@
+
+#ignore bin and gen directories
+*/bin/*
+*/gen/*
+*.class
