@@ -1,9 +1,8 @@
 
-#ignore bin and gen directories
-
-#*/bin/*
-
-#*/gen/*
-
-
 #This gitignore will mess up the whole program#
+=======
+#ignore bin and gen directories
+*/bin/*
+*/gen/*
+
+*.class
