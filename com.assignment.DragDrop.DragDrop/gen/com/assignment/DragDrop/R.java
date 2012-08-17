@@ -24,9 +24,6 @@ public final class R {
         public static final int letter_v=0x7f02000a;
         public static final int letter_y=0x7f02000b;
     }
-    public static final class id {
-        public static final int menu_settings=0x7f060000;
-    }
     public static final class layout {
         public static final int main=0x7f030000;
     }

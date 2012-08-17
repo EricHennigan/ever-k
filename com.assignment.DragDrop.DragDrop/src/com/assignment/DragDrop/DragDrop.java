@@ -7,9 +7,17 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.SubMenu;
 
 public class  DragDrop extends Activity {
-    /** Called when the activity is first created. */
+    private static final CharSequence Options = null;
+
+	private MenuItem item;
+
+    private final int ID_MENU_SETTING = 1;
+    
+	/** Called when the activity is first created. */
+   
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,11 +31,24 @@ public class  DragDrop extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
     	super.onCreateOptionsMenu(menu);
-    	
-    	MenuItem item = menu.add("Add");
-    	item = menu.add("Edit");
-    	getMenuInflater().inflate(R.menu.activity_main, menu);
-        return true;
-    }
+    	//menu.add("Options");
     
-}
+    	//item = menu.add("Setting");
+    	//item = menu.add("Edit");
+    	getMenuInflater().inflate(R.menu.activity_main, menu);
+    	
+    	
+    	//Get a submenu reference
+    	SubMenu sm = menu.addSubMenu("Options");
+    	sm.add("Add");
+    	sm.add("Remove");
+    	sm.add("Save");
+    	sm.add("Load");
+    	
+    	MenuItem item = menu.add(Menu.NONE, ID_MENU_SETTING,Menu.NONE,Options);
+    	menu.add("Restart");
+    	
+    	return true;
+    }
+
+	}
