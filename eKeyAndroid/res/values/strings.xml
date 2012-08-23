@@ -3,7 +3,7 @@
     <string name="app_name">eKeyAndroid</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">Ever-K</string>
+    <string name="title_activity_main">MainActivity</string>
     <string name="button">Button</string>
     <string name="k">K</string>
     <string name="menu_edit">Edit</string>
